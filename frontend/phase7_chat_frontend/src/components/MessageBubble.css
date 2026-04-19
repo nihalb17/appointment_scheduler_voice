@@ -1,0 +1,48 @@
+.bubble-row {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.bubble-left {
+  justify-content: flex-start;
+}
+
+.bubble-right {
+  justify-content: flex-end;
+}
+
+.chat-window {
+  width: 480px;
+  height: 800px;
+  max-height: 90vh;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.bubble-bot {
+  background-color: var(--bg-bubble-bot);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-bottom-left-radius: 4px;
+}
+
+.bubble-user {
+  background-color: var(--bg-bubble-user);
+  border: 1px solid rgba(46, 227, 166, 0.2);
+  color: var(--text-primary);
+  border-bottom-right-radius: 4px;
+}

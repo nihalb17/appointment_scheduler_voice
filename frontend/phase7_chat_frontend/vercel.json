@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/internal", "destination": "/internal.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

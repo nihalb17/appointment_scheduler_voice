@@ -1,0 +1,20 @@
+.git
+.gitignore
+.env
+.env.sample
+node_modules
+frontend
+docs
+tests
+test_*.py
+*.md
+.qoder
+knowledge_base/Employee_Handbook_MF_Distributor (6).pdf
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.db
+.chroma
+.vscode
+.idea
