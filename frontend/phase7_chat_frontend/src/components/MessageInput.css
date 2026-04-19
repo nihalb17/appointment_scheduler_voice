@@ -49,3 +49,19 @@
   opacity: 0.4;
   cursor: not-allowed;
 }
+
+@media (max-width: 600px) {
+  .input-field {
+    font-size: 16px; /* Prevents auto-zoom on iOS */
+    padding: 12px 16px;
+  }
+  
+  .send-btn {
+    width: 44px; /* Larger tap target */
+    height: 44px;
+  }
+  
+  .input-bar {
+    padding: 12px;
+  }
+}
