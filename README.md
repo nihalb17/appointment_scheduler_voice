@@ -29,7 +29,7 @@ graph TD
     U --> O1
     O1 --> Intent
 
-    subgraph "Booking Lane"
+    subgraph BL [Booking Lane]
         B_Elig[Eligibility Agent<br/>Gemini]:::elig
         B_MCP[Calendar Read]:::mcp
         B_IsElig{Eligible}:::decision
@@ -39,7 +39,7 @@ graph TD
         B_Steps[1. Add Calendar Event<br/>2. Create Google Doc<br/>3. Attach Doc to Event<br/>4. Email Distributor<br/>5. Log to Sheets]:::book
     end
 
-    subgraph "Cancellation Lane"
+    subgraph CL [Cancellation Lane]
         C_Elig[Eligibility Agent<br/>Gemini]:::elig
         C_MCP[Calendar Read]:::mcp
         C_IsElig{Eligible}:::decision
@@ -78,8 +78,8 @@ graph TD
     C_Steps --> O2
     O2 --> Confirm([✅ Confirmation to User]):::user
 
-    style "Booking Lane" fill:none,stroke:#993C1D,stroke-dasharray: 5 5
-    style "Cancellation Lane" fill:none,stroke:#993556,stroke-dasharray: 5 5
+    style BL fill:none,stroke:#993C1D,stroke-dasharray: 5 5
+    style CL fill:none,stroke:#993556,stroke-dasharray: 5 5
 ```
 
 ## 🛠️ Technology Stack
